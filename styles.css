@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  font-style: italic;
+}
+body {
+  padding: 5rem;
+}
+
+.container {
+  display: flex;
+}
+.container .list-item {
+  flex: 3;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: relative;
+}
+.container .list-item .total-item {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: chartreuse;
+  color: white;
+  right: 0;
+  transform: translateX(20px);
+  top: -10px;
+}
+
+.container .cart-container {
+  flex: 2;
+  margin-left: 100px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  overflow: auto;
+  max-height: 400px;
+}
+
+.container .list-item .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 10px 20px;
+  margin: 6px 0;
+}
+.container .list-item .item .item-left {
+  display: flex;
+  align-items: center;
+}
+.container .list-item .item .item-left .image {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+}
+.container .list-item .item .item-left .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+}
+.container .list-item .item .item-left .name {
+  margin-left: 20px;
+}
+.container .list-item .item .item-right button {
+  margin-left: 20px;
+  border: none;
+  padding: 10px 20px;
+
+  cursor: pointer;
+}
+
+.item-cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.item-cart .image-cart {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 3px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.item-cart .image-cart img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
